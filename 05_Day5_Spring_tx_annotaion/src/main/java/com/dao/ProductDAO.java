@@ -7,6 +7,7 @@ import java.util.List;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
+import com.entity.OrderDTO;
 import com.entity.ProductDTO;
 
 public class ProductDAO {
@@ -40,6 +41,41 @@ public class ProductDAO {
 		});
 		
 	}
+	
+	public List<OrderDTO> selectOrder() {
+		
+		String query = "select * from t_order order by pcode";
+
+		return jdbcTemplate.query(query, new RowMapper<OrderDTO>() {
+
+			@Override
+			public OrderDTO mapRow(ResultSet rs, int rowNum) throws SQLException {
+				OrderDTO dto = new OrderDTO();
+				dto.setNum(Integer.parseInt(rs.getString("num")));
+				dto.setPcode(rs.getString("pcode"));
+				dto.setQnantity(Integer.parseInt(rs.getString("quantity")));
+				return dto;
+			}
+			
+		});
+		
+	}
+
+	public void addOrder(String pcode, int quantity) throws Exception{
+
+		String sql = "insert into t_order ( num, pcode, quantity ) values ( t_order_seq.nextval, ? , ? )";
+
+		int n = jdbcTemplate.update(sql, pcode, quantity);
+		System.out.println("insert 갯수 : "+ n);
+		//오더데이블에 insert후 
+		//String sql2 = "update t_product set  quantity = quantity - ? , where pcode = ?";
+		String sql2 = "up t_product set  quantity = quantity - ? , where pcode = ?";
+		//update쿼리를 잘못 작성하여 에러를 발생시킴  수량감소
+		int n2= jdbcTemplate.update(sql2 , quantity, pcode );
+
+	}// end insert
+	
+	
 	
 	
 	

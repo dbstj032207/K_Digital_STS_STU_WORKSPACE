@@ -1,3 +1,23 @@
 INDEX VERSION 1.131
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2830225757.index
+\06Day1_MVC_basic02\src\main\java
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2888710974.index
+\06Day5_MVC6_@RequestMapping_method\src\main\java
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4275704611.index
+\06Day3_MVC4_multi\src\main\java
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2413524193.index
+\06Day4_MVC5_InternalResourceViewResolver\src\main\java
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1823557430.index
+\test\src\main\java
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3054263854.index
+\06Day8_MVC8_config_initParam\src\main\java
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3088849473.index
+\06Day7_MVC7_@RequestMapping3_ClassLevel\src\main\java
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3179200070.index
+\06Day6_MVC6_@RequestMapping2_params\src\main\java
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3367721773.index
+\06Day2_MVC3_no_initParam\src\main\java
+C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1912911078.index
+\TEST\src\main\java
 C:\eclipse\STS_STU\WORKSPACE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3147425838.index
 \06Day1_MVC_basic01\src\main\java
