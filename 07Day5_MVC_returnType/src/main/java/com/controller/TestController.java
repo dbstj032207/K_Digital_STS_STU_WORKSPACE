@@ -56,5 +56,39 @@ public class TestController {
 		dto.setPasswd("1234");
 		return dto;
 	}
+	
+	@RequestMapping(value = "/ddd", method = RequestMethod.GET)
+	@ModelAttribute("xxx")	// 키 값은 xxx가 됨
+	public LoginDTO xxx2() {
+		System.out.println("/ddd ===================");
+		LoginDTO dto= new LoginDTO();
+		dto.setUserid("홍길동");
+		dto.setPasswd("1234");
+		return dto;
+	}
+	
+	@RequestMapping(value = "/eee", method = RequestMethod.GET)
+	@ModelAttribute("yyy")	// 키 값은 yyy가 됨
+	public ArrayList<String> eee() {
+		System.out.println("/eee ===================");
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("홍길동01");
+		list.add("홍길동02");
+		list.add("홍길동03");
+		return list;
+	}
+	
+	@RequestMapping(value = "/fff", method = RequestMethod.GET)
+	public void fff(HttpServletRequest request) {
+		System.out.println("/fff ===================");
+		request.setAttribute("test", "홍길동");
+	}
+	
+	@RequestMapping(value = "/ggg", method = RequestMethod.GET)
+	public void ggg(Model m) {
+		System.out.println("/ggg ===================");
+		m.addAttribute("test", "홍길동");
+	}
+		
 
 }
