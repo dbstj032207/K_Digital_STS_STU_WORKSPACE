@@ -1,0 +1,16 @@
+Spring_MVC_myBatis_2
+
+1. 디펜던시 추가 , 업데이트
+2. controller, serivce, dao, 후 필요한 객체 @Autowired
+   dto 작성
+3. jdbc.properties작성
+   Mapper 준비 
+4. root-context.xml 
+   jdbc.properties파일일기, 4가지정보 이용datasource생성, tx 등록, tx 어노테이션활성화
+   SqlSessionFactory 생성(Mapper, dto등록), SqlSessionTemplate 생성
+5. servlet-context.xml
+   component-scan 이용  - controller, serive,repository 생성
+6. controller 
+   /list 주소 처리 => dao.list 함수 => DeptMapper.list 이용전체 선택
+   결과를 Model에 'list'로 저장 , list.jsp 이동
+7. list.jsp 에서 데이터 전체 출력
